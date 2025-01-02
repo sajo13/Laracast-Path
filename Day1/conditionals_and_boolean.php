@@ -13,5 +13,4 @@ if($read) {
  $message = "You haven't read". " ". $name;
 }
 
-//better approach for short syntax
-<?= $message ?>
+echo $message;
