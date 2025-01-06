@@ -11,3 +11,7 @@ CREATE TABLE posts (
 
 
 INSERT INTO `posts` (`post_id`, `title`) VALUES ('1', 'TEST'), ('2', 'TEST2');
+
+
+-- show all posts ---
+Select * from posts;
