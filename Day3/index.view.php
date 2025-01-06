@@ -7,12 +7,10 @@
 </head>
 <body>
     <ul>
-        <?php foreach ($filteredBooks as $book) : ?>
-            <li>
-                <a href="<?= $book['purchaseUrl'] ?>">
-                    <?= $book['name']; ?> (<?= $book['releaseYear'] ?>) - BY <?= $book['author'] ?>
-                </a>
-            </li>
+        <?php echo $business['name'] ?>
+       
+        <?php foreach ($business['categories'] as $category) : ?>
+            <li> <?php echo $category ?>  </li>
         <?php endforeach; ?>
     </ul>
 </body>
