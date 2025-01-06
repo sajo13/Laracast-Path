@@ -1,6 +1,6 @@
 <?php
 require "functions.php";
 
-$heading = "Home";
+require "routes.php";
 
-require "views/index.view.php";
+?>
