@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /laracast-path/Day3/
+RewriteRule ^(.*)$ index.php [QSA,L]
