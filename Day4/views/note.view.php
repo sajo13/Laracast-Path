@@ -12,7 +12,7 @@
     <a href="/laracast-path/Day4/notes" class="text-blue-500 underline" > go back...</a>
   </p>
         <a  class="text-black-500 hover:underline">
-          <?= $note['body']; ?>
+          <?= htmlspecialchars($note['body']); ?>
         </a>
 
   </div>
