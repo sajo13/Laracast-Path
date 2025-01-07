@@ -8,6 +8,6 @@ $db = new Database($config);
 // // $id = $_GET['id'];
 
 $query = "select * from notes";
-$notes = $db->query($query)->fetchAll();
+$notes = $db->query($query)->get();
 
 require "views/notes.view.php";
