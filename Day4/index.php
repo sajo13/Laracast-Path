@@ -1,7 +1,7 @@
 <?php
 require "functions.php";
 require "database.php";
-
+require "Response.php";
 require "routes.php";
 
 //connect to our database, and execute a query
