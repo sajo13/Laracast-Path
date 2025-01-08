@@ -1,3 +1,12 @@
-RewriteEngine On
-RewriteBase /laracast-path/Day5/
-RewriteRule ^(.*)$ index.php [QSA,L]
+Options -Indexes
+<IfModule mod_headers.c>
+    RequestHeader unset Proxy
+</IfModule>
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+    RewriteBase /laracast-path/Day5/
+    RewriteRule ^(.*)$ public/index.php [QSA,L]
+
+</IfModule>
+
