@@ -14,17 +14,13 @@ spl_autoload_register(function ($class) {
     require base_path("{$class}.php");
 });
 
-require base_path("Core/routes.php");
-//connect to our database, and execute a query
-// $config = require('config.php');
-// $db = new Database($config);
-// // $id = $_GET['id'];
-
-// $query = "select * from posts";
-// $posts = $db->query($query)->fetchAll();
+$router = new \Core\Router(); 
+$routes = require BASE_PATH . "Core/route.php";
 
 
-// foreach ( $posts as $post) {
-//     echo "<li>". $post['title'] ."</li>";
-// }
+$uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+
+$method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
+$router->route($uri, $method);
+
 ?>
