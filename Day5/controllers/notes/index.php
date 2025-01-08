@@ -1,4 +1,5 @@
 <?php
+use Core\Database;
 
 $heading = "My Notes";
 
