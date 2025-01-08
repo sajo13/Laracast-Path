@@ -1,4 +1,5 @@
 <?php
+use Core\App;
 use Core\Database;
 
 $heading = " Note";
@@ -6,8 +7,7 @@ $heading = " Note";
 $id = $_GET['id'];
 $currentUserId = 4;
 //connect to our database, and execute a query
-$config = require base_path('config.php');
-$db = new Database($config['database']);
+$db = App::resolve(Database::class);
 
 $note = $db->query('select * from notes where id= :id', [
     'id' => $id
