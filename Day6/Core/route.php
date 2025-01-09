@@ -14,3 +14,6 @@ $router->post('laracast-path/Day6/notes', 'controllers/notes/store.php');
 
 $router->get('laracast-path/Day6/note/edit', 'controllers/notes/edit.php');
 $router->patch('laracast-path/Day6/note', 'controllers/notes/update.php');
+
+$router->get('laracast-path/Day6/register', 'controllers/registration/create.php');
+$router->post('laracast-path/Day6/register', 'controllers/registration/store.php');
