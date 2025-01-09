@@ -48,9 +48,9 @@ if( $users ) {
                 'password' => password_hash($_POST['password'], PASSWORD_BCRYPT)
             ]);
 
-           $_SESSION['user'] = [
-            'email' => $_POST['email']
-           ];
+           
+            login($user);
+            
             // Redirect to the notes page after the insert
             header('Location: /laracast-path/Day6/');
             die();
