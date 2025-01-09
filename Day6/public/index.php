@@ -7,7 +7,6 @@ session_start();
 
 // require base_path("database.php");
 // require base_path("Response.php");
-$_SESSION['user'] = 'false';
 spl_autoload_register(function ($class) {
 
     $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
