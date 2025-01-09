@@ -9,10 +9,11 @@
   <p>
     <a href="/laracast-path/Day6/notes" class="text-blue-500 underline" > go back...</a>
   </p>
-        <a  class="text-black-500 hover:underline">
+        <a  class="text-black-500">
           <?= htmlspecialchars($note['body']); ?>
         </a>
 
+        <a href="/laracast-path/Day6/note/edit?id=<?= $note['id']; ?>" class="text-green-500 underline"> Edit</a>
         <form action="" class="mt-6" method="post">
           <input type="hidden" name="_method" value="DELETE">
           <input type="hidden" name="id" value="<?= $note['id']; ?>">
