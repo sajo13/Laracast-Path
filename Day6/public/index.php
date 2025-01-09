@@ -3,6 +3,8 @@
 const BASE_PATH = __DIR__.'/../';
 require BASE_PATH.'Core/functions.php';
 
+session_start();
+
 // require base_path("database.php");
 // require base_path("Response.php");
 
