@@ -5,7 +5,7 @@ Options -Indexes
 <IfModule mod_rewrite.c>
 
 	RewriteEngine On
-    RewriteBase /laracast-path/Day5/
+    RewriteBase /laracast-path/Day6/
     RewriteRule ^(.*)$ public/index.php [QSA,L]
 
 </IfModule>

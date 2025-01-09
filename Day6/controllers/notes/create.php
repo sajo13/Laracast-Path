@@ -31,6 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
-view("notes/notes-create.view.php",[
+view("notes/create.view.php",[
     'heading' => $heading,
 ]);

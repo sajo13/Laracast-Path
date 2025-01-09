@@ -9,14 +9,14 @@
 
     <?php foreach ($notes as $note): ?>
       <li>
-        <a href="/laracast-path/Day5/note?id=<?= $note['id'] ?>" class="text-blue-500 hover:underline">
+        <a href="/laracast-path/Day6/note?id=<?= $note['id'] ?>" class="text-blue-500 hover:underline">
           <?=htmlspecialchars($note['body']); ?>
         </a>
       </li>
     <?php endforeach ?>
 
     <p class="mt-6">
-      <a href="/laracast-path/Day5/notes/create" class="text-blue-500 hover:underline"> Create Note</a>
+      <a href="/laracast-path/Day6/notes/create" class="text-blue-500 hover:underline"> Create Note</a>
     </p>
   </div>
 </main>

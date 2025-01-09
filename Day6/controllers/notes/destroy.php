@@ -11,5 +11,5 @@ authorize($note['user_id'] === $currentUserId);
 $db->query('delete from notes where id = :id', [
     'id' => $_POST['id']
 ]);
-header('location: /laracast-path/Day5/notes');
+header('location: /laracast-path/Day6/notes');
 exit();

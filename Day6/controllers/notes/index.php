@@ -12,7 +12,7 @@ $query = "select * from notes where user_id = 4";
 $notes = $db->query($query)->get();
 
 
-view("notes/notes.view.php",[
+view("notes/index.view.php",[
     'heading' => $heading,
     'notes' => $notes
 ]);

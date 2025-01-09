@@ -18,5 +18,5 @@ $db->query('INSERT INTO notes(body, user_id) VALUES(:body, :user_id)', [
     'body' => $_POST['body'],
     'user_id' => 4
 ]);
-header('location: /laracast-path/Day5/notes');
+header('location: /laracast-path/Day6/notes');
 die();
