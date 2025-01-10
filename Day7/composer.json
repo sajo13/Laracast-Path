@@ -1,0 +1,11 @@
+{
+    "name": "sajo/laracast-path",
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    }
+}
