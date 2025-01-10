@@ -1,6 +1,7 @@
 <?php
 use Core\Database;
 use Core\App;
+use Core\Authenticator;
 use Core\Validator;
 
 $db = App::resolve(Database::class);
@@ -43,13 +44,13 @@ if( $users ) {
     //insert new record
     // dd($_POST);
     try {
-            $db->query('INSERT INTO users(email, password) VALUES(:email, :password)', [
+            $user = $db->query('INSERT INTO users(email, password) VALUES(:email, :password)', [
                 'email' => $_POST['email'],
                 'password' => password_hash($_POST['password'], PASSWORD_BCRYPT)
             ]);
 
            
-            login($user);
+            (new Authenticator)->login(['email' => $email]);
             
             // Redirect to the notes page after the insert
             header('Location: /laracast-path/Day7/');
